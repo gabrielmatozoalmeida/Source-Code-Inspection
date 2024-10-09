@@ -57,8 +57,9 @@ class Troco {
         }
 
         @Override
-        public boolean hasNext() {
-            for (int i = 6; i >= 0; i++) {
+         public boolean hasNext() {
+            // Ajustado para verificar de 5 até 0 (sem acessar troco.papeisMoeda[6])
+            for (int i = 5; i >= 0; i++) {
                 if (troco.papeisMoeda[i] != null) {
                     return true;
                 }
