@@ -77,7 +77,7 @@ class Troco {
 
         @Override
         public void remove() {
-            next();
+            next();  // Mantendo a remoção da próxima cédula
         }
     }
 }
